@@ -1,0 +1,240 @@
+dal*********************************
+ public int comment(model m){
+            int grade = 1;
+            grade = Convert.ToInt32(m.A1) + Convert.ToInt32(m.A2) + Convert.ToInt32(m.A3) + Convert.ToInt32(m.A4) + Convert.ToInt32(m.A5) + Convert.ToInt32(m.A6) + Convert.ToInt32(m.A7) + Convert.ToInt32(m.A8) + Convert.ToInt32(m.A9) + Convert.ToInt32(m.A10) + Convert.ToInt32(m.A11);
+            
+            return grade;
+        }
+model**************************************
+ private string a1;
+
+    public string A1
+    {
+        get { return a1; }
+        set { a1 = value; }
+    }
+    private string a2;
+
+    public string A2
+    {
+        get { return a2; }
+        set { a2 = value; }
+    }
+    private string a3;
+
+    public string A3
+    {
+        get { return a3; }
+        set { a3 = value; }
+    }
+    private string a4;
+
+    public string A4
+    {
+        get { return a4; }
+        set { a4 = value; }
+    }
+    private string a5;
+
+    public string A5
+    {
+        get { return a5; }
+        set { a5 = value; }
+    }
+    private string a6;
+
+    public string A6
+    {
+        get { return a6; }
+        set { a6 = value; }
+    }
+    private string a7;
+
+    public string A7
+    {
+        get { return a7; }
+        set { a7 = value; }
+    }
+    private string a8;
+
+    public string A8
+    {
+        get { return a8; }
+        set { a8 = value; }
+    }
+    private string a9;
+
+    public string A9
+    {
+        get { return a9; }
+        set { a9 = value; }
+    }
+    private string a10;
+
+    public string A10
+    {
+        get { return a10; }
+        set { a10 = value; }
+    }
+    private string a11;
+
+    public string A11
+    {
+        get { return a11; }
+        set { a11 = value; }
+    }
+aspx**************************************************************
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: right;
+        }
+        .style3
+        {
+            text-align: center;
+            width: 101px;
+        }
+        .style4
+        {
+            text-align: left;
+        }
+        .style5
+        {
+            text-align: right;
+            width: 96px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <table class="style1">
+            <tr>
+                <td colspan="4" style="text-align: center">
+                    评价信息</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    可能发生事故概率</td>
+                <td class="style3">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+                <td class="style5">
+                    人员伤亡概率</td>
+                <td class="style4">
+                    <asp:DropDownList ID="DropDownList2" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    伤亡损伤</td>
+                <td class="style3">
+                    <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+                <td class="style5">
+                    直接经济损失</td>
+                <td class="style4">
+                    <asp:DropDownList ID="DropDownList4" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    社会影响损失</td>
+                <td class="style3">
+                    <asp:DropDownList ID="DropDownList5" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+                <td class="style5">
+                    环境损失</td>
+                <td class="style4">
+                    <asp:DropDownList ID="DropDownList6" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    工作日损失</td>
+                <td class="style3">
+                    <asp:DropDownList ID="DropDownList7" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+                <td class="style5">
+                    整改所需资金</td>
+                <td class="style4">
+                    <asp:DropDownList ID="DropDownList8" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    整改所需时间</td>
+                <td class="style3">
+                    <asp:DropDownList ID="DropDownList9" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+                <td class="style5">
+                    年均经济效益</td>
+                <td class="style4">
+                    <asp:DropDownList ID="DropDownList10" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    整改保持时间</td>
+                <td class="style3">
+                    <asp:DropDownList ID="DropDownList11" runat="server" Width="100px" 
+                        AutoPostBack="True">
+                    </asp:DropDownList>
+                </td>
+                <td class="style5">
+                    隐患等级</td>
+                <td class="style4">
+                    <asp:TextBox ID="TextBox1" runat="server" Width="100px"></asp:TextBox>
+                    <asp:LinkButton ID="LinkButton1"  runat="server" onclick="LinkButton1_Click">评价</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+    
+    </div>
+    </form>
+</body>
+page_lode*****************
+if(!IsPostBack){
+            int i = 1;
+            for (; i <= 8; i++)
+            {
+                string count = i.ToString();
+                DropDownList1.Items.Add(count);
+                DropDownList2.Items.Add(count);
+                DropDownList3.Items.Add(count);
+                DropDownList4.Items.Add(count);
+                DropDownList5.Items.Add(count);
+                DropDownList6.Items.Add(count);
+                DropDownList7.Items.Add(count);
+                DropDownList8.Items.Add(count);
+                DropDownList9.Items.Add(count);
+                DropDownList10.Items.Add(count);
+                DropDownList11.Items.Add(count);
+            }
